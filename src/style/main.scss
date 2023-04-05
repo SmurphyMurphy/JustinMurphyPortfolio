@@ -1,0 +1,102 @@
+@import "./headers.scss";
+@import "./jobs.scss";
+@import "./projects.scss";
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Ubuntu';
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+    margin-top: 0;
+    display: grid;
+    justify-items: center;
+    background-color: #d9d9d9;
+    width: auto;
+    
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-image: url("../style/images/wooden-rustic-brown-planks_88281-2714.png");
+        top: 0;
+        position: sticky;
+        z-index: 15;
+
+        .navbarMeInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: white;
+            margin: 10px;
+        }
+
+        .navbarButtons {
+            display: flex;
+            justify-content: flex-start;
+            margin: 10px;
+
+             a {
+                color: white;
+                margin: 5px;
+                text-decoration: none;
+                padding-bottom: 3px;
+             }
+             a:hover {
+                border-bottom: 2px solid blue;
+             }
+        }       
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+
+    .aboutContent{
+        display: flex;
+        flex-direction: row;
+
+
+        .left {
+            img {    
+                border-radius: 8px;
+                margin: 10px;
+                height: 500px;
+            }
+        }
+
+        .right {
+            padding: 10px 20px;
+            font-size: 20px;
+            width: 500px;
+
+            .socials {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+

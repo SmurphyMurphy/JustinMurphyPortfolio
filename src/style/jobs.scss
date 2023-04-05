@@ -1,0 +1,17 @@
+.jobs {
+    display: flex;
+    justify-content: center;
+
+    .jobCard{  
+        width: 20%;
+        display: inline-block;
+        box-shadow: 2px 2px 10px black;
+        border-radius: 5px; 
+        margin: 2%;
+        text-align: center;
+        padding: 10px;
+        font-size: medium;
+        background-color: white;
+        height: fit-content;
+    }
+}
