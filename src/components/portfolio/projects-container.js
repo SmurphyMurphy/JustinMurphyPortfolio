@@ -26,7 +26,7 @@ export default class PortfolioContainer extends Component {
 
   getProjectItems() {
     axios
-      .get("https://justinMurphy.pythonanywhere.com/projects")
+      .get("https://jmportfolio-backend.herokuapp.com/projects")
       .then((response) => {
         this.setState({
           data: response.data,
